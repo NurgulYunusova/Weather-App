@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@200;300&family=Oswald:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/foggy-forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50vw;
+  height: 65vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.city-input {
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 0.5px solid #7a7a7a;
+  padding: 0.5rem 0.7rem;
+  outline: none;
+  caret-color: #fff;
+  color: #fff;
+}
+
+.city-input::placeholder {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.btn-search {
+  padding: 0.5rem 0.9rem;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: transparent;
+  background-color: #1e792e;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-search:hover,
+.btn-search:focus {
+  background-color: #1a6928;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+section > div {
+  flex-basis: 38%;
+  color: #fff;
+  border: 0.5px solid #7a7a7a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.city,
+.temperature {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.temperature {
+  font-size: 4rem;
+}
+
+.day-hour,
+.weather-description,
+.humidity,
+.wind,
+.feels-like {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.day-hour {
+  margin: 0.1rem 0 0.2rem;
+}
+
+.weather-description {
+  font-size: 1.12rem;
+}
+
+.temp-container {
+  display: flex;
+}
+
+.super {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.wind {
+  margin: 0.3rem 0;
+}
+
+.icon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 75vw;
+    padding: 1.5rem;
+    height: 70vh;
+  }
+
+  .city-input::placeholder,
+  .btn-search {
+    font-size: 0.85rem;
+  }
+
+  .btn-search,
+  .city-input {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .search-box {
+    margin-bottom: 1.5rem;
+  }
+
+  section {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .city,
+  .temperature {
+    font-size: 1.8rem;
+  }
+
+  .day-hour,
+  .weather-description,
+  .humidity,
+  .wind,
+  .feels-like {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  section > div {
+    height: 33%;
+  }
+
+  .super {
+    font-size: 1rem;
+  }
+}

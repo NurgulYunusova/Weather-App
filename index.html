@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-box">
+        <input type="text" placeholder="City name" class="city-input" />
+        <button type="submit" class="btn-search">Search</button>
+      </form>
+      <section>
+        <div class="city-card">
+          <h1 class="city">New York</h1>
+          <h5 class="day-hour">Wednesday 16:57</h5>
+          <h3 class="weather-description">cloudy</h3>
+        </div>
+        <div class="temperature-card">
+          <div class="temp-container">
+            <h1 class="temperature">13</h1>
+            <span class="super">°C</span>
+          </div>
+          <h5 class="humidity">Humidity: 57 %</h5>
+          <h5 class="wind">Wind: 10 km/h</h5>
+          <h5 class="feels-like">Feelslike: 10 °C</h5>
+        </div>
+        <div class="icon-card">
+          <img
+            alt="Weather Icon"
+            class="icon"
+            src="http://openweathermap.org/img/wn/02d@2x.png"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
