@@ -138,7 +138,38 @@ section > div {
   height: 120px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    width: 85%;
+    height: 50vh;
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .day-hour,
+  .weather-description,
+  .humidity,
+  .wind,
+  .feels-like {
+    font-size: 0.9rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
+
   .container {
     width: 75vw;
     padding: 1.5rem;
@@ -147,7 +178,7 @@ section > div {
 
   .city-input::placeholder,
   .btn-search {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   .btn-search,
@@ -164,9 +195,12 @@ section > div {
     height: 100vh;
   }
 
-  .city,
+  .city {
+    font-size: 1.7rem;
+  }
+
   .temperature {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .day-hour,
@@ -174,8 +208,6 @@ section > div {
   .humidity,
   .wind,
   .feels-like {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: normal;
     font-size: 0.8rem;
   }
 
